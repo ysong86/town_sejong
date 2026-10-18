@@ -1,7 +1,7 @@
 # 세종 읍면 생활인프라 격차 상황판
 
 세종 1읍 9면 주민이 일상 시설까지 얼마나 멀리 가야 하는지를 동 지역 평균과 나란히 놓는 상황판.
-대문 https://ysong86.github.io/ 의 02번, 주소 /town_sejong/ (저장소 ysong86/town_sejong). **비밀번호 상황판**(2026-10-18 사용자 요청) — 비밀번호는 생활권 config page_password.
+주소 /town_sejong/(대문 목록에서는 2026-10-18 사용자 요청으로 내림 — 다시 올리려면 대문 index.html D·nav.js 에 town 항목) (저장소 ysong86/town_sejong). **비밀번호 상황판**(2026-10-18 사용자 요청) — 비밀번호는 생활권 config page_password.
 
 ## 만드는 순서
 
