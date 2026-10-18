@@ -1,0 +1,28 @@
+# 인증키가 들어가는 파일 — 절대 커밋하지 말 것
+config.json
+
+# 수집 결과와 생성물
+data/latest.json
+dashboard.html
+site/
+
+# 파이썬
+__pycache__/
+*.pyc
+
+# 작업 중 파일
+_*.html
+_*.geojson
+
+# gh-pages 배포용 워크트리
+.ghpages/
+
+# PC 에서 자동 실행을 멈추는 스위치 (기계마다 다름)
+data/PAUSED
+
+# 원자료 캐시(포털 응답 그대로, 수십 MB)
+data/raw/
+data/sources.json
+
+# 비밀번호 상황판 — 계산 결과(수치)는 공개 저장소에 올리지 않는다
+data/
