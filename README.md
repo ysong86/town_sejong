@@ -16,10 +16,10 @@ C:\Python313\python.exe run.py --dashboard --out site   # 화면만 다시 + 배
 
 ```
 C:\Python313\python.exe tools\make_video.py      # 30초 미리보기(수치 흐림) → site/preview.mp4 (sejong-town 서버 8775 필요)
-C:\Python313\python.exe ..\sejong_livingzone	ools\encrypt_page.py dashboard.html site/index.html "세종 읍면 생활인프라 격차 상황판" --video preview.mp4 --contact "송양호(ysong@sri.re.kr)" --hits "https://hits.sh/ysong86.github.io/town_sejong.svg?view=today-total&style=flat-square&label=%EC%A1%B0%ED%9A%8C%EC%88%98&color=1d5c7c&labelColor=64748b" --nav town
+C:\Python313\python.exe ..\sejong_livingzone\tools\encrypt_page.py dashboard.html site/index.html "세종 읍면 생활인프라 격차 상황판" --video preview.mp4 --contact "송양호(ysong@sri.re.kr)" --hits "https://hits.sh/ysong86.github.io/town_sejong.svg?view=today-total&style=flat-square&label=%EC%A1%B0%ED%9A%8C%EC%88%98&color=1d5c7c&labelColor=64748b" --nav town
 ```
 → gh-pages 에 site/index.html + preview.mp4 + .nojekyll 한 커밋(amend 후 강제 푸시). 조회수 배지는 문이 달므로 페이지에는 달지 않는다.
-대문 썸네일은 `..\sejong_portal	ools\make_thumbs.py --only town`(공개 영상 12초 장면).
+대문 썸네일은 `..\sejong_portal\tools\make_thumbs.py --only town`(공개 영상 12초 장면).
 
 ## 탭 (1단계 MVP = ①③⑥)
 
