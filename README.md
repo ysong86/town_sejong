@@ -1,7 +1,7 @@
 # 세종 읍면 생활인프라 격차 상황판
 
 세종 1읍 9면 주민이 일상 시설까지 얼마나 멀리 가야 하는지를 동 지역 평균과 나란히 놓는 상황판.
-대문 https://ysong86.github.io/ 의 02번, 주소 /town_sejong/ (저장소 ysong86/town_sejong, 공개 예정).
+대문 https://ysong86.github.io/ 의 02번, 주소 /town_sejong/ (저장소 ysong86/town_sejong). **비밀번호 상황판**(2026-10-18 사용자 요청) — 비밀번호는 생활권 config page_password.
 
 ## 만드는 순서
 
@@ -12,7 +12,14 @@ C:\Python313\python.exe run.py --analyze      # assets/pledges.csv 만 고쳤을
 C:\Python313\python.exe run.py --dashboard --out site   # 화면만 다시 + 배포본 site/index.html
 ```
 
-배포는 다른 상황판과 같다: gh-pages 에 site/index.html + .nojekyll 한 커밋(강제 푸시).
+잠근 공개본 만들기(평문 dashboard.html·data/ 는 절대 올리지 않는다):
+
+```
+C:\Python313\python.exe tools\make_video.py      # 30초 미리보기(수치 흐림) → site/preview.mp4 (sejong-town 서버 8775 필요)
+C:\Python313\python.exe ..\sejong_livingzone	ools\encrypt_page.py dashboard.html site/index.html "세종 읍면 생활인프라 격차 상황판" --video preview.mp4 --contact "송양호(ysong@sri.re.kr)" --hits "https://hits.sh/ysong86.github.io/town_sejong.svg?view=today-total&style=flat-square&label=%EC%A1%B0%ED%9A%8C%EC%88%98&color=1d5c7c&labelColor=64748b" --nav town
+```
+→ gh-pages 에 site/index.html + preview.mp4 + .nojekyll 한 커밋(amend 후 강제 푸시). 조회수 배지는 문이 달므로 페이지에는 달지 않는다.
+대문 썸네일은 `..\sejong_portal	ools\make_thumbs.py --only town`(공개 영상 12초 장면).
 
 ## 탭 (1단계 MVP = ①③⑥)
 
